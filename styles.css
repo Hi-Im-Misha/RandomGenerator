@@ -1,0 +1,70 @@
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 65vh;
+    background-color: #f0f0f0;
+}
+
+.container {
+    text-align: center;
+}
+
+.header {
+    margin-top: 20px;
+}
+
+.generate-button {
+    background-color: #3498db;
+    color: white;
+    padding: 20px 50px;
+    border: none;
+    border-radius: 50px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.blocks {
+    display: none;
+    flex-wrap: wrap;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.block {
+    width: 30%; /* Для разделения на 3 части */
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px;
+}
+
+.login-wrapper,
+.password-wrapper,
+.name-wrapper {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 50%; /* Добавляем скругление, чтобы сделать овальную форму */
+    background-color: rgba(255, 255, 255, 0.7); /* Полупрозрачный белый фон */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.055); /* Тень вокруг блока */
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out; /* Плавная анимация */
+}
+
+.login-wrapper:hover,
+.password-wrapper:hover,
+.name-wrapper:hover {
+    transform: scale(1.05); /* Увеличиваем масштаб при наведении */
+    box-shadow: 0 0 15px #3498db; /* Усиленная тень при наведении */
+}
+
+.end{
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #f0f0f0;
+    border-top: 1px solid #ccc;
+}
